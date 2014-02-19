@@ -40,7 +40,7 @@ define('SOAP_OUTPUT_BASE_DIR', ROOT.'lib/soap');
 /*
  * relative output base dir
  */
-define('SOAP_OUTPUT_BASE_DIR', 'ROOT."lib/soap');
+define('SOAP_OUTPUT_BASE_DIR_REL', 'ROOT."lib/soap');
 
 /*
  * sub dir name for models
