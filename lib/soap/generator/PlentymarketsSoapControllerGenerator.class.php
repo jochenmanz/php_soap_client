@@ -253,7 +253,7 @@ class PlentymarketsSoapControllerGenerator
 		{
 			list($arg0) = explode(" ",$string);
 			
-			return array($string, 'require_once("'.SOAP_OUTPUT_BASE_DIR.'/'.SOAP_MODEL_DIR.'/'.SOAP_CLASS_PREFIX . trim($arg0).'.class.php");');
+			return array($string, 'require_once('.SOAP_OUTPUT_BASE_DIR_REL.'/'.SOAP_MODEL_DIR.'/'.SOAP_CLASS_PREFIX . trim($arg0).'.class.php");');
 		}
 	
 		$args = explode(",", $save[1]);
@@ -268,7 +268,7 @@ class PlentymarketsSoapControllerGenerator
 			{
 				$this->classMap[$arg0] = SOAP_CLASS_PREFIX . trim($arg0);
 				
-				$c[] = 'require_once("'.SOAP_OUTPUT_BASE_DIR.'/'.SOAP_MODEL_DIR.'/'.SOAP_CLASS_PREFIX . trim($arg0).'.class.php");';
+				$c[] = 'require_once('.SOAP_OUTPUT_BASE_DIR_REL.'/'.SOAP_MODEL_DIR.'/'.SOAP_CLASS_PREFIX . trim($arg0).'.class.php");';
 			}
 			
 			$args[$i] = SOAP_CLASS_PREFIX . trim($args[$i]);
