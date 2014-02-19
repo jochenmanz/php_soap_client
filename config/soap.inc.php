@@ -38,6 +38,11 @@ define('SOAP_CLASS_PREFIX', '');
 define('SOAP_OUTPUT_BASE_DIR', ROOT.'lib/soap');
 
 /*
+ * relative output base dir
+ */
+define('SOAP_OUTPUT_BASE_DIR', 'ROOT."lib/soap');
+
+/*
  * sub dir name for models
  */
 define('SOAP_MODEL_DIR', 'model');
